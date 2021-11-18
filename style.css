@@ -45,12 +45,14 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .header__menu-list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .header__menu-item {
   margin-left: 5rem;
@@ -133,12 +135,18 @@ body {
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 .category__item {
   width: calc(25% - 22.5px);
   padding: 2.5rem;
   background-color: #fafafa;
   border-radius: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 .category__image {
   width: 100%;
@@ -153,6 +161,7 @@ body {
 .category__details {
   font-size: 1.4rem;
   color: #c6acd7;
+  margin-top: auto;
 }
 .category__details i {
   margin-left: 1.2rem;

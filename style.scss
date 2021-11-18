@@ -29,11 +29,12 @@ body {
   padding-bottom: 5rem;
 }
 
-@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap) {
+@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap, $direction : row) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   flex-wrap: $wrap;
+  flex-direction: $direction;
 }
 
 @mixin size($width, $height: $width) {
@@ -153,6 +154,7 @@ body {
     padding: 2.5rem;
     background-color: #fafafa;
     border-radius: 20px;
+    @include flex(stretch,flex-start, nowrap, column );
   }
 
   &__image {
@@ -173,6 +175,7 @@ body {
     // margin-top: 3rem; --> cannot set margin horizontall for inline element
     font-size: 1.4rem;
     color: $text-gray;
+    margin-top: auto;
     i{ 
       margin-left: 1.2rem;
     }
