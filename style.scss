@@ -1,6 +1,6 @@
 $primary-color: #ffc87a;
 $text-color: #1a2b5f;
-$text-gray :#c6acd7;
+$text-gray: #c6acd7;
 
 html {
   font-size: 62.5%; //1rem = 10px
@@ -29,7 +29,12 @@ body {
   padding-bottom: 5rem;
 }
 
-@mixin flex($align: flex-start, $justify: flex-start, $wrap: nowrap, $direction : row) {
+@mixin flex(
+  $align: flex-start,
+  $justify: flex-start,
+  $wrap: nowrap,
+  $direction: row
+) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
@@ -152,9 +157,22 @@ body {
   &__item {
     width: calc(25% - 22.5px);
     padding: 2.5rem;
-    background-color: #fafafa;
+    background-color: white;
     border-radius: 20px;
-    @include flex(stretch,flex-start, nowrap, column );
+    @include flex(stretch, flex-start, nowrap, column);
+
+    &:first-child {
+      box-shadow: 0 20px 35px -5px rgba(233, 198, 76, 0.25);
+    }
+    &:nth-child(2) {
+      box-shadow: 0 20px 35px -5px rgba(87, 201, 103, 0.25);
+    }
+    &:nth-last-child(2) {
+      box-shadow: 0 20px 35px -5px rgba(241, 162, 144, 0.25);
+    }
+    &:last-child {
+      box-shadow: 0 20px 35px -5px rgba(240, 190, 121, 0.25);
+    }
   }
 
   &__image {
@@ -176,7 +194,7 @@ body {
     font-size: 1.4rem;
     color: $text-gray;
     margin-top: auto;
-    i{ 
+    i {
       margin-left: 1.2rem;
     }
   }
