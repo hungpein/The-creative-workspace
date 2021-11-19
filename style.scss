@@ -199,3 +199,129 @@ body {
     }
   }
 }
+
+.feature {
+  padding-top: 18rem;
+
+  &__item {
+    margin-bottom: 5rem;
+    &:nth-child(odd) {
+      @include flex(center, flex-start, nowrap, row);
+      .feature__image {
+        padding-right: 10rem;
+      }
+    }
+
+    &:nth-child(even) {
+      @include flex(center, flex-start, nowrap, row-reverse);
+      .feature__image {
+        padding-left: 10rem;
+      }
+    }
+  }
+
+  &__image,
+  &__info {
+    width: 50%;
+  }
+
+  &__image {
+    img {
+      @include size(60rem);
+      object-fit: cover;
+      border-radius: 2.5rem;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  &__desc {
+    margin-top: 2.5rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  &-intro {
+    &__list {
+      margin-top: 4rem;
+    }
+    &__item {
+      font-weight: 600;
+      text-decoration: underline;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+
+      &--circle {
+        text-decoration: none;
+        position: relative;
+        padding-left: 3rem;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 50%;
+          background-color: rgb(189, 223, 67);
+        }
+        &:nth-child(2)::before {
+          background-color: #ffa410;
+        }
+        &:last-child::before {
+          background-color: #bd56ec;
+        }
+      }
+    }
+  }
+
+  &-best {
+    &__list {
+      margin-top: 4rem;
+      @include flex(center, space-between, wrap);
+    }
+    &__item {
+      width: calc(50% - 30px);
+      margin-bottom: 2rem;
+    }
+
+    &__icon {
+      width: 5rem;
+      height: 5rem;
+      color: #ffa470;
+      font-size: 2rem;
+      position: relative;
+      @include flex(center, center);
+      z-index: 1;
+
+      &:after {
+        content: '';
+        z-index: -1;
+        background-color: currentColor;
+        opacity: 0.25;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 4px;
+      }
+    }
+
+    &__title {
+      margin-top: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    &__desc {
+      margin-top: 1rem;
+      font-weight: 300;
+    }
+  }
+}
