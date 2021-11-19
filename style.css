@@ -302,4 +302,30 @@ body {
   font-weight: 300;
 }
 
+.partner {
+  padding: 13rem 0 18rem;
+}
+.partner__container {
+  max-width: 88rem;
+  text-align: center;
+}
+.partner__title {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 7rem;
+  border-bottom: 2px solid currentColor;
+}
+.partner__list {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.partner__item {
+  width: 25%;
+  font-size: 4rem;
+}
+
 /*# sourceMappingURL=style.css.map */

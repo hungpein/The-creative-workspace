@@ -325,3 +325,28 @@ body {
     }
   }
 }
+
+.partner {
+  padding: 13rem 0 18rem;
+  &__container {
+    max-width: 88rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 7rem;
+    border-bottom: 2px solid currentColor;
+  }
+
+  &__list {
+    margin-top: 7rem;
+    @include flex(center, space-between, nowrap);
+  }
+
+  &__item {
+    width: 25%;
+    font-size: 4rem;
+  }
+}
