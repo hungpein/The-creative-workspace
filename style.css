@@ -328,4 +328,37 @@ body {
   font-size: 4rem;
 }
 
+.connect {
+  text-align: center;
+}
+.connect__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.connect__desc {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+.connect__desc span {
+  color: #ffc87a;
+}
+.connect__list {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.connect__item {
+  width: calc(25% - 22.5px);
+}
+.connect__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
