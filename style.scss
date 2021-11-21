@@ -26,8 +26,7 @@ body {
   color: $text-color;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 5rem;
-}
+ }
 
 @mixin flex(
   $align: flex-start,
@@ -402,8 +401,7 @@ body {
     max-width: 43rem;
   }
 
-  &__info{
-
+  &__info {
   }
 
   &__form {
@@ -429,11 +427,30 @@ body {
     cursor: pointer;
   }
 
-  &__social{
+  &__social {
     margin-top: 2rem;
-    i{
+    i {
       margin-left: 4rem;
       font-size: 2rem;
     }
+  }
+}
+
+.footer {
+  margin-top: 5rem;
+
+  &__container {
+    @include flex(flex-start, space-between);
+  }
+
+  &__item {
+    width: 25%;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 3rem;
+    width: fit-content;
+    font-size: 1.4rem;
   }
 }

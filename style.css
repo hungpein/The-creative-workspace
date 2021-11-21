@@ -22,7 +22,6 @@ body {
   color: #1a2b5f;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 5rem;
 }
 
 .wrapper {
@@ -411,6 +410,26 @@ body {
 .subcribe__social i {
   margin-left: 4rem;
   font-size: 2rem;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.footer__item {
+  width: 25%;
+}
+.footer__link {
+  display: block;
+  margin-bottom: 3rem;
+  width: fit-content;
+  font-size: 1.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
